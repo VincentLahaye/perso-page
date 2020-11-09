@@ -1,0 +1,62 @@
+$gutter-y: 20px;
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.py-5 {
+    padding: 50px 0;
+}
+
+.pb-3 {
+    padding-bottom: 20px;
+}
+
+.px-2 {
+    padding: 0 $gutter-y;
+}
+
+.mb-2 {
+    margin-bottom: 15px;
+}
+
+.bg-white {
+    background: #FFF;
+}
+
+.bg-violet {
+    background: #7230FF;
+}
+
+.bg-purple {
+    background: #9B51E0;
+}
+
+.bg-orange {
+    background: #FF7A30;
+}
+
+.bg-blue {
+    background: #56CCF2;
+}
+
+.bg-green {
+    background: #6FCF97;
+}
+

@@ -1,0 +1,319 @@
+@import "~normalize.css";
+@import "utils";
+
+/*@import "~bootstrap-scss/functions";
+@import "~bootstrap-scss/variables";
+@import "~bootstrap-scss/mixins";
+//@import "~bootstrap-scss/root";
+@import "~bootstrap-scss/reboot";
+//@import "~bootstrap-scss/type";
+//@import "~bootstrap-scss/images";
+//@import "~bootstrap-scss/code";
+@import "~bootstrap-scss/grid";
+//@import "~bootstrap-scss/tables";
+//@import "~bootstrap-scss/forms";
+@import "~bootstrap-scss/buttons";
+//@import "~bootstrap-scss/transitions";
+//@import "~bootstrap-scss/dropdown";
+//@import "~bootstrap-scss/button-group";
+//@import "~bootstrap-scss/input-group";
+//@import "~bootstrap-scss/custom-forms";
+//@import "~bootstrap-scss/nav";
+//@import "~bootstrap-scss/navbar";
+//@import "~bootstrap-scss/card";
+//@import "~bootstrap-scss/breadcrumb";
+//@import "~bootstrap-scss/pagination";
+//@import "~bootstrap-scss/badge";
+//@import "~bootstrap-scss/jumbotron";
+//@import "~bootstrap-scss/alert";
+//@import "~bootstrap-scss/progress";
+//@import "~bootstrap-scss/media";
+//@import "~bootstrap-scss/list-group";
+//@import "~bootstrap-scss/close";
+//@import "~bootstrap-scss/toasts";
+//@import "~bootstrap-scss/modal";
+//@import "~bootstrap-scss/tooltip";
+//@import "~bootstrap-scss/popover";
+//@import "~bootstrap-scss/carousel";
+//@import "~bootstrap-scss/spinners";
+@import "~bootstrap-scss/utilities";
+//@import "~bootstrap-scss/print";*/
+
+//@font-face {
+//    font-family: 'Wonder Unit Sans';
+//    src: url('../fonts/wonderunitsans/fonts/WonderUnitSans-Regular.eot'); /* IE9 Compat Modes */
+//    src: url('../fonts/wonderunitsans/fonts/WonderUnitSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+//    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+//    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+//}
+
+@font-face {
+    font-family: 'Wonder Unit Sans';
+    font-weight: 700;
+    src: url('../fonts/wonderunitsans/fonts/WonderUnitSans-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/wonderunitsans/fonts/WonderUnitSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Bold.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Wonder Unit Sans';
+//    font-weight: 100;
+    src: url('../fonts/wonderunitsans/fonts/WonderUnitSans-Thin.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/wonderunitsans/fonts/WonderUnitSans-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/wonderunitsans/fonts/WonderUnitSans-Thin.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+body {
+    font-family: "Wonder Unit Sans", sans-serif;
+}
+
+.hh1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.hh2 {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+@media (min-width: 992px) {
+    .hh1 { font-size: 64px; }
+    .hh2 { font-size: 48px; }
+}
+
+.avatar1 {
+    width: 155px;
+    height: 204px;
+    filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+    border-radius: 83px;
+}
+
+.top-content {
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+
+    section {
+        padding: 50px $gutter-y;
+    }
+}
+
+.darken-bg {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.image-as-bg {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.linkedin {
+    background: url('../icons/LinkedIN.svg');
+}
+
+.twitter {
+    background: url('../icons/Twitter.svg');
+}
+
+.google-form {
+    background: url('../icons/GoogleForm.svg');
+}
+
+.gmail {
+    background: url('../icons/Gmail.svg');
+}
+
+.apple {
+    background: url('../icons/Apple.svg');
+}
+
+.figma {
+    background: url('../icons/Figma.svg');
+}
+
+.dribbble {
+    background: url('../icons/Dribbble.svg');
+}
+
+.keedata {
+    width: 200px;
+    height: 45px;
+    display: inline-block;
+    background: url('../icons/Keedata.svg');
+}
+
+.link {
+    font-size: 27px;
+    text-decoration: none;
+    color: #FFF;
+
+    &:after {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        background: url('../icons/LinkIcon.svg');
+        display: inline-block;
+        margin-left: 15px;
+    }
+}
+
+.keedata-desc {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.oxford-brookes-uni {
+    display: inline-block;
+    width: 152px;
+    height: 63px;
+    background: url('../icons/OxfordBrookesUni.svg');
+}
+
+.supinfo-uni {
+    display: inline-block;
+    width: 166px;
+    height: 53px;
+    background: url('../icons/Supinfo.svg');
+}
+
+.blank {
+    height: 350px;
+}
+
+.btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    padding-right: 10px;
+    border-radius: 40px;
+}
+
+.title2 {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.title-underline {
+    display: block;
+    width: 200px;
+    height: 4px;
+    border-radius: 2px;
+    background: #3F3F3F;
+    margin: 0 auto 50px auto;
+}
+
+.domain-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 725px;
+    margin: auto;
+}
+
+.domain {
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .domain {
+        flex-direction: row;
+    }
+}
+
+.domain-left {
+    flex-grow: 1;
+}
+
+.domain-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.domain-left {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .domain-left {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+}
+
+.project-keedata {
+    background: url('../images/Trianglify-20s-884px.svg');
+    background-size: cover;
+}
+
+.project {
+    padding: 30px;
+    border-radius: 20px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .project {
+        flex-direction: row;
+    }
+}
+
+.project-right {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.insta-section {
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+    height: 1053px;
+    width: 100%;
+    display: block;
+    padding: 200px 0;
+}
+
+@media (min-width: 992px) {
+    .insta-section {
+        height: 960px;
+    }
+}

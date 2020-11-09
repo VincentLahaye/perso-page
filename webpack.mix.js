@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-svg-sprite');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,28 @@ const mix = require('laravel-mix');
  |
  */
 
+Config.svgSprite = {
+    /*
+     * @see https://github.com/kisenka/svg-sprite-loader#configuration
+     */
+    loaderOptions: {
+        extract: true
+    },
+    /*
+     * @see https://github.com/kisenka/svg-sprite-loader#configuration
+     */
+    pluginOptions: {
+        plainSprite: false
+    }
+};
+
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
+    .sass('resources/css/app.scss', 'public/css', [
         //
-    ]);
+    ])
+    .svgSprite(
+        'resources/icons', // The directory containing your SVG files
+        'images/sprite.svg', // The output path for the sprite
+        //[], // Optional, see https://github.com/kisenka/svg-sprite-loader#configuration
+        //[] // Optional, see https://github.com/kisenka/svg-sprite-loader#configuration
+    );
